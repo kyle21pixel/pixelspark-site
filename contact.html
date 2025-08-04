@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - JD Legal Transcripts</title>
+    <meta name="description" content="Contact JD Legal Transcripts for professional transcription services. Get in touch via phone, email, or our contact form.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#1e40af',
+                        'secondary-blue': '#3b82f6',
+                        'accent-gold': '#f59e0b',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Open Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-microphone text-primary-blue text-2xl mr-2"></i>
+                        <span class="font-bold text-xl text-primary-blue">JD Legal Transcripts</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary-blue transition duration-300">Home</a>
+                    <a href="services.html" class="text-gray-700 hover:text-primary-blue transition duration-300">Services</a>
+                    <a href="about.html" class="text-gray-700 hover:text-primary-blue transition duration-300">About</a>
+                    <a href="upload.html" class="text-gray-700 hover:text-primary-blue transition duration-300">Upload</a>
+                    <a href="contact.html" class="text-primary-blue font-semibold">Contact</a>
+                    <a href="faq.html" class="text-gray-700 hover:text-primary-blue transition duration-300">FAQ</a>
+                    <a href="index.html#quote" class="bg-accent-gold text-white px-4 py-2 rounded-lg hover:bg-yellow-500 transition duration-300">Get Quote</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button text-gray-700 hover:text-primary-blue">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-primary-blue">Home</a>
+                <a href="services.html" class="block px-3 py-2 text-gray-700 hover:text-primary-blue">Services</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-700 hover:text-primary-blue">About</a>
+                <a href="upload.html" class="block px-3 py-2 text-gray-700 hover:text-primary-blue">Upload</a>
+                <a href="contact.html" class="block px-3 py-2 text-primary-blue font-semibold">Contact</a>
+                <a href="faq.html" class="block px-3 py-2 text-gray-700 hover:text-primary-blue">FAQ</a>
+                <a href="index.html#quote" class="block px-3 py-2 bg-accent-gold text-white rounded-lg mx-3">Get Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-16 bg-gradient-to-br from-primary-blue to-secondary-blue text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
+            <p class="text-xl text-blue-100 max-w-3xl mx-auto">
+                Ready to get started? Contact our team today for professional transcription services 
+                or any questions about our offerings.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Have a question or ready to start your transcription project? Fill out the form below 
+                        and we'll get back to you within 2 hours during business hours.
+                    </p>
+                    
+                    <form id="contactForm" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-blue focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-blue focus:border-transparent">
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="contactEmail" class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                                <input type="email" id="contactEmail" name="contactEmail" required 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-blue focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="contactPhone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                                <input type="tel" id="contactPhone" name="contactPhone" 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-blue focus:border-transparent">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="company" class="block text-sm font-medium text-gray-700 mb-2">Company/Organization</label>
+                            <input type="text" id="company" name="company" 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-blue focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subject *</label>
+                            <select id="subject" name="subject" required 
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-blue focus:border-transparent">
+                                <option value="">Select a subject</option>
+                                <option value="quote">Request a Quote</option>
+                                <option value="legal">Legal Transcription Inquiry</option>
+                                <option value="medical">Medical Transcription Inquiry</option>
+                                <option value="interview">Interview/Zoom Transcription</option>
+                                <option value="general">General Transcription</option>
+                                <option value="support">Customer Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="contactMessage" class="block text-sm font-medium text-gray-700 mb-2">Message *</label>
+                            <textarea id="contactMessage" name="contactMessage" rows="6" required 
+                                      placeholder="Please describe your transcription needs, timeline, or any questions you have..."
+                                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-blue focus:border-transparent"></textarea>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex items-center h-5">
+                                <input id="agreement" name="agreement" type="checkbox" required 
+                                       class="focus:ring-primary-blue h-4 w-4 text-primary-blue border-gray-300 rounded">
+                            </div>
+                            <div class="ml-3 text-sm">
+                                <label for="agreement" class="text-gray-700">
+                                    I agree to the <a href="#" class="text-primary-blue hover:text-secondary-blue">Terms of Service</a> 
+                                    and <a href="#" class="text-primary-blue hover:text-secondary-blue">Privacy Policy</a> *
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-primary-blue text-white py-4 px-6 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
+                            <i class="fas fa-paper-plane mr-2"></i>Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Get in Touch</h2>
+                    <p class="text-lg text-gray-600 mb-8">
+                        We're here to help with all your transcription needs. Reach out to us through any 
+                        of the methods below for fast, professional assistance.
+                    </p>
+                    
+                    <!-- Contact Methods -->
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="bg-primary-blue text-white w-12 h-12 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-phone text-lg"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-gray-900">Phone</h3>
+                                <p class="text-gray-600">Call us for immediate assistance</p>
+                                <a href="tel:+1-555-123-4567" class="text-primary-blue font-semibold hover:text-secondary-blue">
+                                    +1 (555) 123-4567
+                                </a>
+                                <p class="text-sm text-gray-500">Mon-Fri 8:00 AM - 8:00 PM EST</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="bg-primary-blue text-white w-12 h-12 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-envelope text-lg"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-gray-900">Email</h3>
+                                <p class="text-gray-600">Send us an email anytime</p>
+                                <a href="mailto:info@jdlegaltranscripts.com" class="text-primary-blue font-semibold hover:text-secondary-blue">
+                                    info@jdlegaltranscripts.com
+                                </a>
+                                <p class="text-sm text-gray-500">We respond within 2 hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="bg-primary-blue text-white w-12 h-12 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-map-marker-alt text-lg"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-gray-900">Address</h3>
+                                <p class="text-gray-600">Our main office location</p>
+                                <p class="text-gray-700">
+                                    123 Business District Ave<br>
+                                    Suite 500<br>
+                                    New York, NY 10001
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="bg-primary-blue text-white w-12 h-12 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-clock text-lg"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-gray-900">Business Hours</h3>
+                                <p class="text-gray-600">When we're available</p>
+                                <div class="text-gray-700">
+                                    <p>Monday - Friday: 8:00 AM - 8:00 PM EST</p>
+                                    <p>Saturday: 9:00 AM - 5:00 PM EST</p>
+                                    <p>Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Emergency Contact -->
+                    <div class="bg-red-50 border-l-4 border-red-400 p-4 mb-8">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-exclamation-triangle text-red-400"></i>
+                            </div>
+                            <div class="ml-3">
+                                <h4 class="text-sm font-medium text-red-800">Rush/Emergency Projects</h4>
+                                <p class="text-sm text-red-700">
+                                    For urgent transcription needs outside business hours, 
+                                    call our emergency line: <strong>+1 (555) 999-RUSH</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Find Our Office</h2>
+                <p class="text-lg text-gray-600">
+                    Located in the heart of New York's business district, easily accessible by public transportation.
+                </p>
+            </div>
+            
+            <!-- Google Maps Placeholder -->
+            <div class="bg-gray-300 rounded-xl h-96 flex items-center justify-center mb-8">
+                <div class="text-center text-gray-600">
+                    <i class="fas fa-map-marked-alt text-6xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Interactive Map</h3>
+                    <p>Google Maps integration would be embedded here</p>
+                    <p class="text-sm">123 Business District Ave, Suite 500, New York, NY 10001</p>
+                </div>
+            </div>
+            
+            <!-- Directions -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-primary-blue text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-subway text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-900">By Subway</h3>
+                    <p class="text-gray-600">
+                        Take the 4, 5, 6 trains to Union Square<br>
+                        5-minute walk to our office
+                    </p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-primary-blue text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-car text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-900">By Car</h3>
+                    <p class="text-gray-600">
+                        Parking garage available<br>
+                        $20/day validated parking for clients
+                    </p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-primary-blue text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-bus text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-900">By Bus</h3>
+                    <p class="text-gray-600">
+                        Multiple bus routes available<br>
+                        M14, M23, M103 stop nearby
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Preview -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-600">Quick answers to common questions about our services</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <h3 class="text-lg font-semibold mb-3 text-gray-900">How fast can you deliver transcripts?</h3>
+                    <p class="text-gray-600 mb-4">
+                        Standard turnaround is 48-72 hours. We also offer rush (24 hours) and same-day (8-12 hours) 
+                        services for urgent projects.
+                    </p>
+                    <a href="faq.html" class="text-primary-blue font-semibold hover:text-secondary-blue">Learn More →</a>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <h3 class="text-lg font-semibold mb-3 text-gray-900">Is my information kept confidential?</h3>
+                    <p class="text-gray-600 mb-4">
+                        Absolutely. We use bank-level encryption and follow strict HIPAA compliance protocols. 
+                        All staff sign comprehensive NDAs.
+                    </p>
+                    <a href="faq.html" class="text-primary-blue font-semibold hover:text-secondary-blue">Learn More →</a>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <h3 class="text-lg font-semibold mb-3 text-gray-900">What file formats do you accept?</h3>
+                    <p class="text-gray-600 mb-4">
+                        We accept all major audio and video formats including MP3, MP4, WAV, M4A, AVI, MOV, WMV, 
+                        and many others.
+                    </p>
+                    <a href="faq.html" class="text-primary-blue font-semibold hover:text-secondary-blue">Learn More →</a>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <h3 class="text-lg font-semibold mb-3 text-gray-900">How do you ensure accuracy?</h3>
+                    <p class="text-gray-600 mb-4">
+                        Our multi-level quality assurance process includes certified transcriptionists and 
+                        dedicated proofreaders, ensuring 99.9% accuracy.
+                    </p>
+                    <a href="faq.html" class="text-primary-blue font-semibold hover:text-secondary-blue">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-primary-blue text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Get Started?</h2>
+            <p class="text-xl text-blue-100 mb-8">
+                Join thousands of satisfied clients who trust JD Legal Transcripts for their critical documentation needs.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="index.html#quote" class="bg-accent-gold text-white px-8 py-4 rounded-lg font-semibold hover:bg-yellow-500 transition duration-300">
+                    <i class="fas fa-calculator mr-2"></i>Get Your Free Quote
+                </a>
+                <a href="upload.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary-blue transition duration-300">
+                    <i class="fas fa-upload mr-2"></i>Upload Your Files
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-microphone text-accent-gold text-2xl mr-2"></i>
+                        <span class="font-bold text-xl">JD Legal Transcripts</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">Professional transcription services with precision, confidentiality, and speed. Trusted by legal and medical professionals nationwide.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-accent-gold transition duration-300">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="mailto:info@jdlegaltranscripts.com" class="text-gray-300 hover:text-accent-gold transition duration-300">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-accent-gold transition duration-300">Home</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-accent-gold transition duration-300">Services</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-accent-gold transition duration-300">About Us</a></li>
+                        <li><a href="upload.html" class="text-gray-300 hover:text-accent-gold transition duration-300">Upload Files</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-accent-gold transition duration-300">Contact</a></li>
+                        <li><a href="faq.html" class="text-gray-300 hover:text-accent-gold transition duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-accent-gold transition duration-300">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-accent-gold transition duration-300">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-accent-gold transition duration-300">HIPAA Compliance</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-accent-gold transition duration-300">Data Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">&copy; 2024 JD Legal Transcripts. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
