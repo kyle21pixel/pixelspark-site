@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - JD Legal Transcripts</title>
+    <meta name="description" content="Learn about JD Legal Transcripts - our mission, values, and commitment to providing accurate and confidential transcription services.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                        accent: '#fbbf24',
+                        gold: '#d97706'
+                    },
+                    fontFamily: {
+                        'sans': ['Open Sans', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <i class="fas fa-gavel text-primary text-2xl"></i>
+                        <span class="text-xl font-bold text-primary">JD Legal Transcripts</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary transition duration-300">Home</a>
+                    <a href="services.html" class="text-gray-700 hover:text-primary transition duration-300">Services</a>
+                    <a href="about.html" class="text-primary font-semibold">About Us</a>
+                    <a href="upload.html" class="text-gray-700 hover:text-primary transition duration-300">Upload Files</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-primary transition duration-300">Contact</a>
+                    <a href="faq.html" class="text-gray-700 hover:text-primary transition duration-300">FAQ</a>
+                    <a href="contact.html" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">Request Quote</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Home</a>
+                <a href="services.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Services</a>
+                <a href="about.html" class="block px-3 py-2 text-primary font-semibold">About Us</a>
+                <a href="upload.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Upload Files</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Contact</a>
+                <a href="faq.html" class="block px-3 py-2 text-gray-700 hover:text-primary">FAQ</a>
+                <a href="contact.html" class="block px-3 py-2 bg-primary text-white rounded-lg m-2">Request Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-16 bg-gradient-to-br from-primary to-secondary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                    About JD Legal Transcripts
+                </h1>
+                <p class="text-xl md:text-2xl text-blue-100">
+                    Your trusted partner in professional transcription services since 2015
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Story -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Founded in 2015 by legal professional Jennifer Davis, JD Legal Transcripts was born from a simple observation: the legal industry needed more accurate, secure, and timely transcription services. After years of working with unreliable transcription providers, Jennifer decided to create a company that would set new standards for quality and confidentiality.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6">
+                        What started as a small operation serving local law firms has grown into a trusted partner for legal professionals, medical institutions, and corporate clients across the country. Our commitment to precision, security, and client satisfaction has remained unwavering throughout our journey.
+                    </p>
+                    <p class="text-lg text-gray-600">
+                        Today, we proudly serve over 500 clients nationwide, maintaining the same attention to detail and personal service that defined our early days.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-lg">
+                        <div class="text-center">
+                            <div class="text-6xl text-primary mb-4">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Professional Excellence</h3>
+                            <p class="text-gray-600">Serving clients nationwide with unmatched quality and reliability</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Values -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Mission & Values</h2>
+                <p class="text-xl text-gray-600">The principles that guide everything we do</p>
+            </div>
+            
+            <!-- Mission -->
+            <div class="mb-16">
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="text-primary text-5xl mb-6">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                        To provide the most accurate, secure, and timely transcription services in the industry, enabling our clients to focus on what they do best while trusting us with their most important documentation needs.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Values -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Precision</h3>
+                    <p class="text-gray-600">We believe accuracy is non-negotiable. Every transcript undergoes rigorous quality control to ensure 99% accuracy or better.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Security</h3>
+                    <p class="text-gray-600">Your confidential information is sacred to us. We employ bank-level security measures and strict confidentiality protocols.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Reliability</h3>
+                    <p class="text-gray-600">We understand deadlines matter. Our proven processes ensure consistent, on-time delivery without compromising quality.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Integrity</h3>
+                    <p class="text-gray-600">We conduct business with honesty and transparency, building long-term relationships based on trust and mutual respect.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Service</h3>
+                    <p class="text-gray-600">Client satisfaction is our top priority. We go above and beyond to exceed expectations and provide exceptional service.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Innovation</h3>
+                    <p class="text-gray-600">We continuously invest in technology and training to improve our services and stay ahead of industry standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Leadership Team</h2>
+                <p class="text-xl text-gray-600">Experienced professionals dedicated to your success</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-blue-100 to-blue-200 w-32 h-32 rounded-full mx-auto mb-6 flex items-center justify-center">
+                        <i class="fas fa-user text-primary text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Jennifer Davis</h3>
+                    <p class="text-accent font-semibold mb-3">Founder & CEO</p>
+                    <p class="text-gray-600">Former legal professional with 15+ years experience. Jennifer founded JD Legal Transcripts to revolutionize transcription services for the legal industry.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-blue-100 to-blue-200 w-32 h-32 rounded-full mx-auto mb-6 flex items-center justify-center">
+                        <i class="fas fa-user text-primary text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Dr. Michael Rodriguez</h3>
+                    <p class="text-accent font-semibold mb-3">Medical Division Director</p>
+                    <p class="text-gray-600">Board-certified physician who leads our medical transcription division, ensuring HIPAA compliance and medical terminology accuracy.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-blue-100 to-blue-200 w-32 h-32 rounded-full mx-auto mb-6 flex items-center justify-center">
+                        <i class="fas fa-user text-primary text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Sarah Chen</h3>
+                    <p class="text-accent font-semibold mb-3">Quality Assurance Manager</p>
+                    <p class="text-gray-600">Quality control expert with a background in linguistics, responsible for maintaining our industry-leading accuracy standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Stats -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">By the Numbers</h2>
+                <p class="text-xl text-blue-100">Our track record speaks for itself</p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold text-accent mb-2">500+</div>
+                    <p class="text-blue-100">Clients Served</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold text-accent mb-2">99.5%</div>
+                    <p class="text-blue-100">Accuracy Rate</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold text-accent mb-2">50,000+</div>
+                    <p class="text-blue-100">Hours Transcribed</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold text-accent mb-2">98%</div>
+                    <p class="text-blue-100">Client Retention</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
+                <p class="text-xl text-gray-600">Trusted by professionals across industries</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-accent">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"JD Legal Transcripts has been our exclusive transcription partner for three years. Their accuracy and professionalism are unmatched in the industry."</p>
+                    <div>
+                        <div class="font-semibold">Robert Williams</div>
+                        <div class="text-sm text-gray-500">Senior Partner, Williams & Associates</div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-accent">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The medical transcription team understands complex terminology and delivers HIPAA-compliant transcripts faster than any other service we've used."</p>
+                    <div>
+                        <div class="font-semibold">Dr. Amanda Foster</div>
+                        <div class="text-sm text-gray-500">Chief of Staff, Regional Medical Center</div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-accent">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Outstanding service for our Zoom meeting transcriptions. The speaker identification and formatting are perfect every time."</p>
+                    <div>
+                        <div class="font-semibold">David Park</div>
+                        <div class="text-sm text-gray-500">VP Operations, TechCorp Solutions</div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-accent">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Reliable, secure, and incredibly accurate. JD Legal Transcripts has streamlined our documentation process significantly."</p>
+                    <div>
+                        <div class="font-semibold">Maria Gonzalez</div>
+                        <div class="text-sm text-gray-500">Legal Administrator, City Attorney's Office</div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-accent">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The customer service is exceptional. They accommodate rush requests and always deliver quality work on time."</p>
+                    <div>
+                        <div class="font-semibold">Dr. James Liu</div>
+                        <div class="text-sm text-gray-500">Research Director, University Hospital</div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-accent">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Professional, confidential, and cost-effective. They've become an essential part of our legal team's workflow."</p>
+                    <div>
+                        <div class="font-semibold">Lisa Thompson</div>
+                        <div class="text-sm text-gray-500">Paralegal, Thompson Legal Group</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Experience the Difference?</h2>
+            <p class="text-xl mb-8 text-blue-100">Join hundreds of satisfied clients who trust JD Legal Transcripts</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="upload.html" class="bg-accent hover:bg-gold text-black px-8 py-3 rounded-lg font-semibold transition duration-300">
+                    Start Your Project
+                </a>
+                <a href="contact.html" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-3 rounded-lg font-semibold transition duration-300">
+                    Contact Our Team
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-gavel text-accent text-2xl"></i>
+                        <span class="text-xl font-bold">JD Legal Transcripts</span>
+                    </div>
+                    <p class="text-gray-300">Professional transcription services with precision, speed, and confidentiality.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-300 hover:text-white transition duration-300">Legal Transcription</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-white transition duration-300">Medical Transcription</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-white transition duration-300">Interview Transcription</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-white transition duration-300">General Transcription</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <div class="space-y-2">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-envelope text-accent"></i>
+                            <span class="text-gray-300">info@jdlegaltranscripts.com</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-phone text-accent"></i>
+                            <span class="text-gray-300">(555) 123-4567</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-300 hover:text-accent transition duration-300">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="mailto:info@jdlegaltranscripts.com" class="text-gray-300 hover:text-accent transition duration-300">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-300">&copy; 2024 JD Legal Transcripts. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="terms.html" class="text-gray-300 hover:text-white transition duration-300">Terms of Service</a>
+                    <a href="privacy.html" class="text-gray-300 hover:text-white transition duration-300">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

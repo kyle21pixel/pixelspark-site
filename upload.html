@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Files - JD Legal Transcripts</title>
+    <meta name="description" content="Secure file upload portal for transcription services. Upload audio and video files with drag-and-drop functionality.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                        accent: '#fbbf24',
+                        gold: '#d97706'
+                    },
+                    fontFamily: {
+                        'sans': ['Open Sans', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <i class="fas fa-gavel text-primary text-2xl"></i>
+                        <span class="text-xl font-bold text-primary">JD Legal Transcripts</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary transition duration-300">Home</a>
+                    <a href="services.html" class="text-gray-700 hover:text-primary transition duration-300">Services</a>
+                    <a href="about.html" class="text-gray-700 hover:text-primary transition duration-300">About Us</a>
+                    <a href="upload.html" class="text-primary font-semibold">Upload Files</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-primary transition duration-300">Contact</a>
+                    <a href="faq.html" class="text-gray-700 hover:text-primary transition duration-300">FAQ</a>
+                    <a href="contact.html" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">Request Quote</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Home</a>
+                <a href="services.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Services</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-700 hover:text-primary">About Us</a>
+                <a href="upload.html" class="block px-3 py-2 text-primary font-semibold">Upload Files</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Contact</a>
+                <a href="faq.html" class="block px-3 py-2 text-gray-700 hover:text-primary">FAQ</a>
+                <a href="contact.html" class="block px-3 py-2 bg-primary text-white rounded-lg m-2">Request Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-16 bg-gradient-to-br from-primary to-secondary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                    Secure File Upload
+                </h1>
+                <p class="text-xl md:text-2xl text-blue-100 mb-6">
+                    Upload your audio and video files for professional transcription
+                </p>
+                <div class="bg-blue-800 bg-opacity-50 p-4 rounded-lg inline-block">
+                    <div class="flex items-center justify-center">
+                        <i class="fas fa-shield-alt text-accent text-2xl mr-3"></i>
+                        <span class="text-lg">Bank-level encryption ensures your files are secure</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload Form -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <form id="upload-form" class="bg-white rounded-lg shadow-lg p-8">
+                
+                <!-- Project Information -->
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Project Information</h2>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="client-name" class="block text-sm font-medium text-gray-700 mb-2">
+                                Full Name <span class="text-red-500">*</span>
+                            </label>
+                            <input type="text" id="client-name" name="client-name" required 
+                                   class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="client-email" class="block text-sm font-medium text-gray-700 mb-2">
+                                Email Address <span class="text-red-500">*</span>
+                            </label>
+                            <input type="email" id="client-email" name="client-email" required
+                                   class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">
+                                Phone Number
+                            </label>
+                            <input type="tel" id="phone" name="phone"
+                                   class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="company" class="block text-sm font-medium text-gray-700 mb-2">
+                                Company/Organization
+                            </label>
+                            <input type="text" id="company" name="company"
+                                   class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Selection -->
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Service Details</h2>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="service-type" class="block text-sm font-medium text-gray-700 mb-2">
+                                Service Type <span class="text-red-500">*</span>
+                            </label>
+                            <select id="service-type" name="service-type" required
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                                <option value="">Select a service</option>
+                                <option value="legal">Legal Transcription</option>
+                                <option value="medical">Medical Transcription</option>
+                                <option value="interview">Interview & Zoom Transcription</option>
+                                <option value="general">General & Academic Transcription</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="turnaround" class="block text-sm font-medium text-gray-700 mb-2">
+                                Turnaround Time <span class="text-red-500">*</span>
+                            </label>
+                            <select id="turnaround" name="turnaround" required
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                                <option value="">Select turnaround time</option>
+                                <option value="standard">Standard (48 hours)</option>
+                                <option value="express">Express (24 hours) - Additional cost</option>
+                                <option value="rush">Rush (Same day) - Premium cost</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="format" class="block text-sm font-medium text-gray-700 mb-2">
+                                Preferred Format
+                            </label>
+                            <select id="format" name="format"
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                                <option value="word">Microsoft Word (.docx)</option>
+                                <option value="pdf">PDF Document</option>
+                                <option value="txt">Plain Text (.txt)</option>
+                                <option value="custom">Custom Format (specify in notes)</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="speakers" class="block text-sm font-medium text-gray-700 mb-2">
+                                Number of Speakers
+                            </label>
+                            <select id="speakers" name="speakers"
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                                <option value="1">1 Speaker</option>
+                                <option value="2">2 Speakers</option>
+                                <option value="3-5">3-5 Speakers</option>
+                                <option value="6+">6+ Speakers</option>
+                                <option value="unknown">Unknown</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- File Upload Area -->
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">File Upload</h2>
+                    
+                    <div id="upload-area" class="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center hover:border-primary transition duration-300 cursor-pointer">
+                        <div id="upload-content">
+                            <i class="fas fa-cloud-upload-alt text-gray-400 text-6xl mb-4"></i>
+                            <h3 class="text-xl font-semibold text-gray-700 mb-2">Drag and drop your files here</h3>
+                            <p class="text-gray-500 mb-4">or click to browse and select files</p>
+                            <button type="button" id="browse-btn" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                                Browse Files
+                            </button>
+                        </div>
+                        
+                        <input type="file" id="file-input" name="files" multiple accept="audio/*,video/*,.mp3,.mp4,.wav,.m4a,.aac,.flac,.ogg,.wma,.mov,.avi,.mkv" class="hidden">
+                    </div>
+                    
+                    <!-- File List -->
+                    <div id="file-list" class="mt-6 hidden">
+                        <h4 class="text-lg font-semibold text-gray-900 mb-3">Selected Files:</h4>
+                        <div id="file-items"></div>
+                    </div>
+                    
+                    <!-- File Requirements -->
+                    <div class="mt-6 bg-blue-50 p-4 rounded-lg">
+                        <h4 class="text-sm font-semibold text-blue-900 mb-2">File Requirements:</h4>
+                        <ul class="text-sm text-blue-800 space-y-1">
+                            <li><i class="fas fa-check text-blue-600 mr-2"></i>Supported formats: MP3, MP4, WAV, M4A, AAC, FLAC, OGG, WMA, MOV, AVI, MKV</li>
+                            <li><i class="fas fa-check text-blue-600 mr-2"></i>Maximum file size: 500MB per file</li>
+                            <li><i class="fas fa-check text-blue-600 mr-2"></i>Maximum total upload: 2GB</li>
+                            <li><i class="fas fa-check text-blue-600 mr-2"></i>Clear audio quality recommended for best results</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Special Instructions -->
+                <div class="mb-8">
+                    <label for="instructions" class="block text-sm font-medium text-gray-700 mb-2">
+                        Special Instructions or Notes
+                    </label>
+                    <textarea id="instructions" name="instructions" rows="4"
+                              class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                              placeholder="Please include any special formatting requirements, speaker names, technical terms, or other important details..."></textarea>
+                </div>
+
+                <!-- Confidentiality Agreement -->
+                <div class="mb-8">
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Confidentiality & Security</h3>
+                        <div class="space-y-3">
+                            <label class="flex items-start">
+                                <input type="checkbox" id="confidentiality" name="confidentiality" required 
+                                       class="mt-1 mr-3 text-primary focus:ring-primary">
+                                <span class="text-sm text-gray-700">
+                                    I acknowledge that JD Legal Transcripts will maintain strict confidentiality of all uploaded files and content, 
+                                    and that all transcriptionists are bound by non-disclosure agreements. <span class="text-red-500">*</span>
+                                </span>
+                            </label>
+                            
+                            <label class="flex items-start">
+                                <input type="checkbox" id="terms" name="terms" required 
+                                       class="mt-1 mr-3 text-primary focus:ring-primary">
+                                <span class="text-sm text-gray-700">
+                                    I agree to the <a href="terms.html" class="text-primary hover:underline">Terms of Service</a> 
+                                    and <a href="privacy.html" class="text-primary hover:underline">Privacy Policy</a>. <span class="text-red-500">*</span>
+                                </span>
+                            </label>
+                            
+                            <label class="flex items-start">
+                                <input type="checkbox" id="updates" name="updates" 
+                                       class="mt-1 mr-3 text-primary focus:ring-primary">
+                                <span class="text-sm text-gray-700">
+                                    I would like to receive email updates about my project status and completion.
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Estimated Cost -->
+                <div class="mb-8">
+                    <div class="bg-accent bg-opacity-10 p-6 rounded-lg">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Estimated Cost</h3>
+                        <div id="cost-estimate" class="text-sm text-gray-700">
+                            <p>Upload your files to receive an accurate quote based on audio length and selected services.</p>
+                            <p class="mt-2 font-semibold">We'll provide a detailed quote within 30 minutes of your submission.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="text-center">
+                    <button type="submit" id="submit-btn" disabled
+                            class="bg-gray-400 text-white px-8 py-3 rounded-lg font-semibold cursor-not-allowed transition duration-300">
+                        <i class="fas fa-upload mr-2"></i>
+                        Upload Files & Submit Project
+                    </button>
+                    <p class="text-sm text-gray-500 mt-3">
+                        By submitting, you agree to our terms and confirm the accuracy of the provided information.
+                    </p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Upload Process -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">How It Works</h2>
+                <p class="text-xl text-gray-600">Simple, secure, and professional process</p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                        1
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Upload Files</h3>
+                    <p class="text-gray-600">Securely upload your audio or video files using our encrypted portal.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                        2
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Get Quote</h3>
+                    <p class="text-gray-600">Receive a detailed quote within 30 minutes based on your requirements.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                        3
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Transcription</h3>
+                    <p class="text-gray-600">Our expert team transcribes your files with 99%+ accuracy.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                        4
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Delivery</h3>
+                    <p class="text-gray-600">Receive your completed transcript securely via email or download.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Need Help or Have Questions?</h2>
+            <p class="text-xl text-gray-600 mb-8">Our team is here to assist you with any questions about file upload or our services</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
+                    Contact Support
+                </a>
+                <a href="faq.html" class="bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-lg font-semibold transition duration-300">
+                    View FAQ
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-gavel text-accent text-2xl"></i>
+                        <span class="text-xl font-bold">JD Legal Transcripts</span>
+                    </div>
+                    <p class="text-gray-300">Professional transcription services with precision, speed, and confidentiality.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-300 hover:text-white transition duration-300">Legal Transcription</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-white transition duration-300">Medical Transcription</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-white transition duration-300">Interview Transcription</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-white transition duration-300">General Transcription</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <div class="space-y-2">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-envelope text-accent"></i>
+                            <span class="text-gray-300">info@jdlegaltranscripts.com</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-phone text-accent"></i>
+                            <span class="text-gray-300">(555) 123-4567</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-300 hover:text-accent transition duration-300">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="mailto:info@jdlegaltranscripts.com" class="text-gray-300 hover:text-accent transition duration-300">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-300">&copy; 2024 JD Legal Transcripts. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="terms.html" class="text-gray-300 hover:text-white transition duration-300">Terms of Service</a>
+                    <a href="privacy.html" class="text-gray-300 hover:text-white transition duration-300">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/upload.js"></script>
+</body>
+</html>
