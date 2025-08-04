@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - JD Legal Transcripts</title>
+    <meta name="description" content="Frequently asked questions about JD Legal Transcripts services, pricing, turnaround times, and confidentiality policies.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                        accent: '#fbbf24',
+                        gold: '#d97706'
+                    },
+                    fontFamily: {
+                        'sans': ['Open Sans', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <i class="fas fa-gavel text-primary text-2xl"></i>
+                        <span class="text-xl font-bold text-primary">JD Legal Transcripts</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary transition duration-300">Home</a>
+                    <a href="services.html" class="text-gray-700 hover:text-primary transition duration-300">Services</a>
+                    <a href="about.html" class="text-gray-700 hover:text-primary transition duration-300">About Us</a>
+                    <a href="upload.html" class="text-gray-700 hover:text-primary transition duration-300">Upload Files</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-primary transition duration-300">Contact</a>
+                    <a href="faq.html" class="text-primary font-semibold">FAQ</a>
+                    <a href="contact.html" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">Request Quote</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Home</a>
+                <a href="services.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Services</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-700 hover:text-primary">About Us</a>
+                <a href="upload.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Upload Files</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Contact</a>
+                <a href="faq.html" class="block px-3 py-2 text-primary font-semibold">FAQ</a>
+                <a href="contact.html" class="block px-3 py-2 bg-primary text-white rounded-lg m-2">Request Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-16 bg-gradient-to-br from-primary to-secondary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                    Frequently Asked Questions
+                </h1>
+                <p class="text-xl md:text-2xl text-blue-100">
+                    Find answers to common questions about our transcription services
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Categories -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Browse by Category</h2>
+                <p class="text-xl text-gray-600">Click on a category to jump to those questions</p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-6 mb-16">
+                <a href="#general" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 text-center">
+                    <i class="fas fa-info-circle text-primary text-3xl mb-4"></i>
+                    <h3 class="text-lg font-semibold text-gray-900">General Questions</h3>
+                </a>
+                
+                <a href="#pricing" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 text-center">
+                    <i class="fas fa-dollar-sign text-primary text-3xl mb-4"></i>
+                    <h3 class="text-lg font-semibold text-gray-900">Pricing & Billing</h3>
+                </a>
+                
+                <a href="#technical" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 text-center">
+                    <i class="fas fa-cog text-primary text-3xl mb-4"></i>
+                    <h3 class="text-lg font-semibold text-gray-900">Technical & Files</h3>
+                </a>
+                
+                <a href="#security" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 text-center">
+                    <i class="fas fa-shield-alt text-primary text-3xl mb-4"></i>
+                    <h3 class="text-lg font-semibold text-gray-900">Security & Privacy</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- General Questions -->
+            <div id="general" class="mb-16">
+                <h2 class="text-2xl font-bold text-gray-900 mb-8 flex items-center">
+                    <i class="fas fa-info-circle text-primary text-2xl mr-3"></i>
+                    General Questions
+                </h2>
+                
+                <div class="space-y-4">
+                    <div class="faq-item bg-gray-50 rounded-lg">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition duration-300">
+                            <span class="text-lg font-semibold text-gray-900">What types of transcription services do you offer?</span>
+                            <i class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer hidden p-6 pt-0">
+                            <p class="text-gray-600">We offer four main types of transcription services:</p>
+                            <ul class="list-disc ml-6 mt-2 space-y-1 text-gray-600">
+                                <li><strong>Legal Transcription:</strong> Court proceedings, depositions, arbitrations, legal interviews</li>
+                                <li><strong>Medical Transcription:</strong> Patient consultations, medical reports, clinical notes (HIPAA compliant)</li>
+                                <li><strong>Interview & Zoom Transcription:</strong> Virtual meetings, job interviews, research interviews</li>
+                                <li><strong>General & Academic:</strong> Lectures, podcasts, focus groups, training sessions</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item bg-gray-50 rounded-lg">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition duration-300">
+                            <span class="text-lg font-semibold text-gray-900">How quickly can you complete my transcription?</span>
+                            <i class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer hidden p-6 pt-0">
+                            <p class="text-gray-600">We offer three turnaround options:</p>
+                            <ul class="list-disc ml-6 mt-2 space-y-1 text-gray-600">
+                                <li><strong>Standard (48 hours):</strong> Perfect for most projects with standard quality requirements</li>
+                                <li><strong>Express (24 hours):</strong> Priority processing for urgent projects (additional cost)</li>
+                                <li><strong>Rush (Same day):</strong> Emergency service for critical deadlines (premium cost)</li>
+                            </ul>
+                            <p class="text-gray-600 mt-3">Turnaround times are calculated from the time we receive your complete files and project details, not including weekends and holidays.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item bg-gray-50 rounded-lg">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition duration-300">
+                            <span class="text-lg font-semibold text-gray-900">What is your accuracy rate?</span>
+                            <i class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer hidden p-6 pt-0">
+                            <p class="text-gray-600">We guarantee 99% accuracy or better on all transcriptions. Our quality control process includes:</p>
+                            <ul class="list-disc ml-6 mt-2 space-y-1 text-gray-600">
+                                <li>Professional transcriptionists with specialized training</li>
+                                <li>Multi-level quality review process</li>
+                                <li>Specialized knowledge in legal, medical, and technical terminology</li>
+                                <li>Free revisions if accuracy falls below our standards</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item bg-gray-50 rounded-lg">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition duration-300">
+                            <span class="text-lg font-semibold text-gray-900">Do you provide speaker identification?</span>
+                            <i class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer hidden p-6 pt-0">
+                            <p class="text-gray-600">Yes, we provide speaker identification for all multi-speaker recordings. We can:</p>
+                            <ul class="list-disc ml-6 mt-2 space-y-1 text-gray-600">
+                                <li>Identify speakers by voice characteristics (Speaker 1, Speaker 2, etc.)</li>
+                                <li>Use provided names if you give us speaker information</li>
+                                <li>Add timestamps to track when each speaker begins talking</li>
+                                <li>Format conversations clearly for easy reading</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pricing & Billing -->
+            <div id="pricing" class="mb-16">
+                <h2 class="text-2xl font-bold text-gray-900 mb-8 flex items-center">
+                    <i class="fas fa-dollar-sign text-primary text-2xl mr-3"></i>
+                    Pricing & Billing
+                </h2>
+                
+                <div class="space-y-4">
+                    <div class="faq-item bg-gray-50 rounded-lg">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition duration-300">
+                            <span class="text-lg font-semibold text-gray-900">How much do your transcription services cost?</span>
+                            <i class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer hidden p-6 pt-0">
+                            <p class="text-gray-600">Our pricing is based on audio length and service type:</p>
+                            <ul class="list-disc ml-6 mt-2 space-y-1 text-gray-600">
+                                <li><strong>General & Academic:</strong> Starting at $2.00 per audio minute</li>
+                                <li><strong>Interview & Zoom:</strong> Starting at $2.25 per audio minute</li>
+                                <li><strong>Legal Transcription:</strong> Starting at $2.50 per audio minute</li>
+                                <li><strong>Medical Transcription:</strong> Starting at $2.75 per audio minute</li>
+                            </ul>
+                            <p class="text-gray-600 mt-3">Express and rush services have additional fees. Volume discounts available for large projects.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item bg-gray-50 rounded-lg">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition duration-300">
+                            <span class="text-lg font-semibold text-gray-900">How do you calculate the final cost?</span>
+                            <i class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer hidden p-6 pt-0">
+                            <p class="text-gray-600">We calculate costs based on the total audio duration, not file size. Here's how it works:</p>
+                            <ul class="list-disc ml-6 mt-2 space-y-1 text-gray-600">
+                                <li>We measure the actual speaking time in your recording</li>
+                                <li>Silent periods and pauses are not charged</li>
+                                <li>Multiple speakers don't increase the per-minute rate</li>
+                                <li>You receive a detailed quote before we begin work</li>
+                                <li>No hidden fees or surprise charges</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item bg-gray-50 rounded-lg">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition duration-300">
+                            <span class="text-lg font-semibold text-gray-900">What payment methods do you accept?</span>
+                            <i class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer hidden p-6 pt-0">
+                            <p class="text-gray-600">We accept multiple payment methods for your convenience:</p>
+                            <ul class="list-disc ml-6 mt-2 space-y-1 text-gray-600">
+                                <li>Credit cards (Visa, MasterCard, American Express, Discover)</li>
+                                <li>PayPal and PayPal Business accounts</li>
+                                <li>Bank transfers (ACH) for corporate clients</li>
+                                <li>Invoicing with NET 30 terms for established clients</li>
+                                <li>Purchase orders for government and institutional clients</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item bg-gray-50 rounded-lg">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition duration-300">
+                            <span class="text-lg font-semibold text-gray-900">Do you offer discounts for large projects?</span>
+                            <i class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer hidden p-6 pt-0">
+                            <p class="text-gray-600">Yes, we offer volume discounts based on project size:</p>
+                            <ul class="list-disc ml-6 mt-2 space-y-1 text-gray-600">
+                                <li><strong>10+ hours:</strong> 5% discount</li>
+                                <li><strong>25+ hours:</strong> 10% discount</li>
+                                <li><strong>50+ hours:</strong> 15% discount</li>
+                                <li><strong>100+ hours:</strong> 20% discount</li>
+                            </ul>
+                            <p class="text-gray-600 mt-3">We also offer special rates for academic institutions, non-profits, and long-term contracts. Contact us for a custom quote.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical & Files -->
+            <div id="technical" class="mb-16">
+                <h2 class="text-2xl font-bold text-gray-900 mb-8 flex items-center">
+                    <i class="fas fa-cog text-primary text-2xl mr-3"></i>
+                    Technical & Files
+                </h2>
+                
+                <div class="space-y-4">
+                    <div class="faq-item bg-gray-50 rounded-lg">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition duration-300">
+                            <span class="text-lg font-semibold text-gray-900">What file formats do you accept?</span>
+                            <i class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer hidden p-6 pt-0">
+                            <p class="text-gray-600">We accept all major audio and video formats:</p>
+                            <div class="grid md:grid-cols-2 gap-4 mt-2">
+                                <div>
+                                    <p class="font-semibold text-gray-800 mb-1">Audio Formats:</p>
+                                    <ul class="list-disc ml-6 space-y-1 text-gray-600">
+                                        <li>MP3, WAV, M4A</li>
+                                        <li>AAC, FLAC, OGG</li>
+                                        <li>WMA, AIFF</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-800 mb-1">Video Formats:</p>
+                                    <ul class="list-disc ml-6 space-y-1 text-gray-600">
+                                        <li>MP4, MOV, AVI</li>
+                                        <li>MKV, WMV, FLV</li>
+                                        <li>WebM, 3GP</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item bg-gray-50 rounded-lg">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition duration-300">
+                            <span class="text-lg font-semibold text-gray-900">What are your file size limitations?</span>
+                            <i class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer hidden p-6 pt-0">
+                            <p class="text-gray-600">Our file upload system has the following limitations:</p>
+                            <ul class="list-disc ml-6 mt-2 space-y-1 text-gray-600">
+                                <li><strong>Maximum file size:</strong> 500MB per individual file</li>
+                                <li><strong>Total upload limit:</strong> 2GB per project submission</li>
+                                <li><strong>For larger files:</strong> We can provide secure FTP access or accept files via cloud storage links</li>
+                            </ul>
+                            <p class="text-gray-600 mt-3">If you have files larger than these limits, please contact us for alternative upload methods.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item bg-gray-50 rounded-lg">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition duration-300">
+                            <span class="text-lg font-semibold text-gray-900">What audio quality do you recommend?</span>
+                            <i class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer hidden p-6 pt-0">
+                            <p class="text-gray-600">For best transcription results, we recommend:</p>
+                            <ul class="list-disc ml-6 mt-2 space-y-1 text-gray-600">
+                                <li><strong>Bit rate:</strong> At least 128 kbps for audio files</li>
+                                <li><strong>Sample rate:</strong> 44.1 kHz or higher</li>
+                                <li><strong>Background noise:</strong> Minimize background noise when possible</li>
+                                <li><strong>Microphone:</strong> Use external microphones for better quality than built-in mics</li>
+                                <li><strong>Recording environment:</strong> Quiet rooms with minimal echo</li>
+                            </ul>
+                            <p class="text-gray-600 mt-3">Don't worry if your audio isn't perfect - our team is skilled at working with challenging audio quality.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item bg-gray-50 rounded-lg">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition duration-300">
+                            <span class="text-lg font-semibold text-gray-900">In what formats do you deliver transcripts?</span>
+                            <i class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer hidden p-6 pt-0">
+                            <p class="text-gray-600">We provide transcripts in multiple formats:</p>
+                            <ul class="list-disc ml-6 mt-2 space-y-1 text-gray-600">
+                                <li><strong>Microsoft Word (.docx):</strong> Fully editable with formatting</li>
+                                <li><strong>PDF:</strong> Professional, print-ready documents</li>
+                                <li><strong>Plain Text (.txt):</strong> Simple, universal format</li>
+                                <li><strong>Excel Spreadsheet:</strong> For structured data projects</li>
+                                <li><strong>Custom formats:</strong> We can accommodate special requirements</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Security & Privacy -->
+            <div id="security" class="mb-16">
+                <h2 class="text-2xl font-bold text-gray-900 mb-8 flex items-center">
+                    <i class="fas fa-shield-alt text-primary text-2xl mr-3"></i>
+                    Security & Privacy
+                </h2>
+                
+                <div class="space-y-4">
+                    <div class="faq-item bg-gray-50 rounded-lg">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition duration-300">
+                            <span class="text-lg font-semibold text-gray-900">How do you ensure the confidentiality of my files?</span>
+                            <i class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer hidden p-6 pt-0">
+                            <p class="text-gray-600">We take confidentiality very seriously with multiple security measures:</p>
+                            <ul class="list-disc ml-6 mt-2 space-y-1 text-gray-600">
+                                <li><strong>Encryption:</strong> All files are encrypted during upload, storage, and transmission</li>
+                                <li><strong>NDAs:</strong> Every team member signs strict non-disclosure agreements</li>
+                                <li><strong>Access control:</strong> Files are only accessible to assigned transcriptionists</li>
+                                <li><strong>Secure deletion:</strong> Files are permanently deleted after project completion</li>
+                                <li><strong>HIPAA compliance:</strong> Full compliance for medical transcription projects</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item bg-gray-50 rounded-lg">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition duration-300">
+                            <span class="text-lg font-semibold text-gray-900">Are you HIPAA compliant for medical transcription?</span>
+                            <i class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer hidden p-6 pt-0">
+                            <p class="text-gray-600">Yes, we are fully HIPAA compliant for all medical transcription services:</p>
+                            <ul class="list-disc ml-6 mt-2 space-y-1 text-gray-600">
+                                <li>Business Associate Agreements (BAA) available</li>
+                                <li>HIPAA-trained transcriptionists for medical content</li>
+                                <li>Secure, encrypted infrastructure</li>
+                                <li>Audit trails for all file access and modifications</li>
+                                <li>Regular compliance audits and training updates</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item bg-gray-50 rounded-lg">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition duration-300">
+                            <span class="text-lg font-semibold text-gray-900">How long do you keep my files?</span>
+                            <i class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer hidden p-6 pt-0">
+                            <p class="text-gray-600">Our file retention policy is designed for security and convenience:</p>
+                            <ul class="list-disc ml-6 mt-2 space-y-1 text-gray-600">
+                                <li><strong>Active projects:</strong> Files kept securely until project completion</li>
+                                <li><strong>Completed projects:</strong> Files retained for 30 days after delivery for revisions</li>
+                                <li><strong>After 30 days:</strong> All files are permanently and securely deleted</li>
+                                <li><strong>Extended retention:</strong> Available upon request for legal or compliance needs</li>
+                                <li><strong>Legal projects:</strong> Can be retained longer per attorney requirements</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item bg-gray-50 rounded-lg">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition duration-300">
+                            <span class="text-lg font-semibold text-gray-900">What happens if there's a security breach?</span>
+                            <i class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer hidden p-6 pt-0">
+                            <p class="text-gray-600">We have comprehensive security protocols in place:</p>
+                            <ul class="list-disc ml-6 mt-2 space-y-1 text-gray-600">
+                                <li><strong>Prevention:</strong> Multiple layers of security prevent unauthorized access</li>
+                                <li><strong>Monitoring:</strong> 24/7 security monitoring and intrusion detection</li>
+                                <li><strong>Response plan:</strong> Immediate notification and response procedures</li>
+                                <li><strong>Client notification:</strong> Immediate contact if any breach affects your data</li>
+                                <li><strong>Legal compliance:</strong> Full compliance with breach notification laws</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Still Have Questions -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Still Have Questions?</h2>
+            <p class="text-xl mb-8 text-blue-100">Our team is here to help with any specific questions about your project</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-accent hover:bg-gold text-black px-8 py-3 rounded-lg font-semibold transition duration-300">
+                    Contact Our Team
+                </a>
+                <a href="tel:555-123-4567" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-3 rounded-lg font-semibold transition duration-300">
+                    Call (555) 123-4567
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-gavel text-accent text-2xl"></i>
+                        <span class="text-xl font-bold">JD Legal Transcripts</span>
+                    </div>
+                    <p class="text-gray-300">Professional transcription services with precision, speed, and confidentiality.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-300 hover:text-white transition duration-300">Legal Transcription</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-white transition duration-300">Medical Transcription</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-white transition duration-300">Interview Transcription</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-white transition duration-300">General Transcription</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <div class="space-y-2">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-envelope text-accent"></i>
+                            <span class="text-gray-300">info@jdlegaltranscripts.com</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-phone text-accent"></i>
+                            <span class="text-gray-300">(555) 123-4567</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-300 hover:text-accent transition duration-300">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="mailto:info@jdlegaltranscripts.com" class="text-gray-300 hover:text-accent transition duration-300">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-300">&copy; 2024 JD Legal Transcripts. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="terms.html" class="text-gray-300 hover:text-white transition duration-300">Terms of Service</a>
+                    <a href="privacy.html" class="text-gray-300 hover:text-white transition duration-300">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/faq.js"></script>
+</body>
+</html>

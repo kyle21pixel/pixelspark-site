@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - JD Legal Transcripts</title>
+    <meta name="description" content="Professional transcription services including legal, medical, interview, and general transcription with fast turnaround times.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                        accent: '#fbbf24',
+                        gold: '#d97706'
+                    },
+                    fontFamily: {
+                        'sans': ['Open Sans', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <i class="fas fa-gavel text-primary text-2xl"></i>
+                        <span class="text-xl font-bold text-primary">JD Legal Transcripts</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary transition duration-300">Home</a>
+                    <a href="services.html" class="text-primary font-semibold">Services</a>
+                    <a href="about.html" class="text-gray-700 hover:text-primary transition duration-300">About Us</a>
+                    <a href="upload.html" class="text-gray-700 hover:text-primary transition duration-300">Upload Files</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-primary transition duration-300">Contact</a>
+                    <a href="faq.html" class="text-gray-700 hover:text-primary transition duration-300">FAQ</a>
+                    <a href="contact.html" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">Request Quote</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Home</a>
+                <a href="services.html" class="block px-3 py-2 text-primary font-semibold">Services</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-700 hover:text-primary">About Us</a>
+                <a href="upload.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Upload Files</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Contact</a>
+                <a href="faq.html" class="block px-3 py-2 text-gray-700 hover:text-primary">FAQ</a>
+                <a href="contact.html" class="block px-3 py-2 bg-primary text-white rounded-lg m-2">Request Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-16 bg-gradient-to-br from-primary to-secondary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                    Our Transcription Services
+                </h1>
+                <p class="text-xl md:text-2xl text-blue-100">
+                    Professional, accurate, and confidential transcription for every industry
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Legal Transcription -->
+            <div class="mb-16">
+                <div class="flex items-center mb-8">
+                    <div class="text-primary text-5xl mr-6">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900">Legal Transcription</h2>
+                        <p class="text-xl text-gray-600">Accurate transcription for all legal proceedings</p>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Services Include:</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Court Proceedings</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Depositions</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Arbitrations</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Legal Interviews</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Settlement Conferences</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Legal Dictation</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Key Features:</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center"><i class="fas fa-shield-alt text-primary mr-2"></i> Attorney-Client Privilege Protected</li>
+                            <li class="flex items-center"><i class="fas fa-clock text-primary mr-2"></i> 24-48 Hour Turnaround</li>
+                            <li class="flex items-center"><i class="fas fa-certificate text-primary mr-2"></i> Certified Transcriptionists</li>
+                            <li class="flex items-center"><i class="fas fa-file-pdf text-primary mr-2"></i> Multiple Format Options</li>
+                            <li class="flex items-center"><i class="fas fa-lock text-primary mr-2"></i> Secure File Transfer</li>
+                            <li class="flex items-center"><i class="fas fa-search text-primary mr-2"></i> Searchable Transcripts</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Pricing: Legal Transcription</h3>
+                    <p class="text-gray-700 mb-4">Starting at <span class="text-2xl font-bold text-primary">$2.50</span> per audio minute</p>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="bg-white px-3 py-1 rounded-full text-sm">Rush Service Available</span>
+                        <span class="bg-white px-3 py-1 rounded-full text-sm">Volume Discounts</span>
+                        <span class="bg-white px-3 py-1 rounded-full text-sm">Free Trial</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Medical Transcription -->
+            <div class="mb-16">
+                <div class="flex items-center mb-8">
+                    <div class="text-primary text-5xl mr-6">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900">Medical Transcription</h2>
+                        <p class="text-xl text-gray-600">HIPAA-compliant medical documentation</p>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Services Include:</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Patient Consultations</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Medical Reports</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Clinical Notes</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Surgery Reports</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Radiology Reports</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Pathology Reports</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Compliance & Security:</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center"><i class="fas fa-shield-alt text-primary mr-2"></i> HIPAA Compliant</li>
+                            <li class="flex items-center"><i class="fas fa-user-md text-primary mr-2"></i> Medical Terminology Experts</li>
+                            <li class="flex items-center"><i class="fas fa-lock text-primary mr-2"></i> Encrypted File Transfer</li>
+                            <li class="flex items-center"><i class="fas fa-certificate text-primary mr-2"></i> Certified Medical Transcriptionists</li>
+                            <li class="flex items-center"><i class="fas fa-file-medical text-primary mr-2"></i> EMR Integration Ready</li>
+                            <li class="flex items-center"><i class="fas fa-history text-primary mr-2"></i> Audit Trail Maintained</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Pricing: Medical Transcription</h3>
+                    <p class="text-gray-700 mb-4">Starting at <span class="text-2xl font-bold text-primary">$2.75</span> per audio minute</p>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="bg-white px-3 py-1 rounded-full text-sm">HIPAA Compliant</span>
+                        <span class="bg-white px-3 py-1 rounded-full text-sm">Same-Day Rush</span>
+                        <span class="bg-white px-3 py-1 rounded-full text-sm">EMR Ready</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interview & Zoom Transcription -->
+            <div class="mb-16">
+                <div class="flex items-center mb-8">
+                    <div class="text-primary text-5xl mr-6">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900">Interview & Zoom Meeting Transcription</h2>
+                        <p class="text-xl text-gray-600">Virtual meetings and interviews transcribed with speaker identification</p>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Services Include:</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Zoom Meetings</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Microsoft Teams</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Job Interviews</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Research Interviews</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Conference Calls</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Webinars</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Special Features:</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center"><i class="fas fa-users text-primary mr-2"></i> Speaker Identification</li>
+                            <li class="flex items-center"><i class="fas fa-clock text-primary mr-2"></i> Timestamp Options</li>
+                            <li class="flex items-center"><i class="fas fa-volume-up text-primary mr-2"></i> Audio Enhancement</li>
+                            <li class="flex items-center"><i class="fas fa-language text-primary mr-2"></i> Multiple Languages</li>
+                            <li class="flex items-center"><i class="fas fa-file-alt text-primary mr-2"></i> Clean Verbatim Style</li>
+                            <li class="flex items-center"><i class="fas fa-download text-primary mr-2"></i> Multiple File Formats</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Pricing: Interview & Zoom Transcription</h3>
+                    <p class="text-gray-700 mb-4">Starting at <span class="text-2xl font-bold text-primary">$2.25</span> per audio minute</p>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="bg-white px-3 py-1 rounded-full text-sm">Speaker ID Included</span>
+                        <span class="bg-white px-3 py-1 rounded-full text-sm">Timestamps Available</span>
+                        <span class="bg-white px-3 py-1 rounded-full text-sm">Multi-language Support</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- General & Academic Transcription -->
+            <div class="mb-16">
+                <div class="flex items-center mb-8">
+                    <div class="text-primary text-5xl mr-6">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900">General & Academic Transcription</h2>
+                        <p class="text-xl text-gray-600">Research, lectures, and general audio transcription</p>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Services Include:</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Academic Lectures</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Research Interviews</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Podcasts</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Focus Groups</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Training Sessions</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> General Audio Files</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Format Options:</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center"><i class="fas fa-file-word text-primary mr-2"></i> Microsoft Word</li>
+                            <li class="flex items-center"><i class="fas fa-file-pdf text-primary mr-2"></i> PDF Format</li>
+                            <li class="flex items-center"><i class="fas fa-file-alt text-primary mr-2"></i> Plain Text</li>
+                            <li class="flex items-center"><i class="fas fa-table text-primary mr-2"></i> Excel Spreadsheet</li>
+                            <li class="flex items-center"><i class="fas fa-code text-primary mr-2"></i> Custom Formats</li>
+                            <li class="flex items-center"><i class="fas fa-cloud text-primary mr-2"></i> Cloud Storage Compatible</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Pricing: General & Academic Transcription</h3>
+                    <p class="text-gray-700 mb-4">Starting at <span class="text-2xl font-bold text-primary">$2.00</span> per audio minute</p>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="bg-white px-3 py-1 rounded-full text-sm">Student Discounts</span>
+                        <span class="bg-white px-3 py-1 rounded-full text-sm">Bulk Pricing</span>
+                        <span class="bg-white px-3 py-1 rounded-full text-sm">Academic Rates</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Turnaround Times -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Turnaround Times</h2>
+                <p class="text-xl text-gray-600">Fast, reliable delivery options to meet your deadlines</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Standard</h3>
+                    <div class="text-3xl font-bold text-primary mb-2">48 Hours</div>
+                    <p class="text-gray-600 mb-6">Perfect for most projects with standard quality requirements</p>
+                    <ul class="text-left space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 99% Accuracy Guarantee</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Professional Quality</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Multiple Revisions</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center border-2 border-accent">
+                    <div class="text-accent text-4xl mb-4">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Express</h3>
+                    <div class="text-3xl font-bold text-accent mb-2">24 Hours</div>
+                    <p class="text-gray-600 mb-6">Fast turnaround for urgent projects without quality compromise</p>
+                    <ul class="text-left space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Priority Processing</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Dedicated Team</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Quality Assurance</li>
+                    </ul>
+                    <div class="bg-accent text-white px-4 py-2 rounded-full text-sm font-semibold">Most Popular</div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="text-red-500 text-4xl mb-4">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Rush</h3>
+                    <div class="text-3xl font-bold text-red-500 mb-2">Same Day</div>
+                    <p class="text-gray-600 mb-6">Emergency service for critical deadlines</p>
+                    <ul class="text-left space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Emergency Processing</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Senior Transcriptionists</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Direct Communication</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Get Started?</h2>
+            <p class="text-xl mb-8 text-blue-100">Choose the service that fits your needs and upload your files today</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="upload.html" class="bg-accent hover:bg-gold text-black px-8 py-3 rounded-lg font-semibold transition duration-300">
+                    Upload Files Now
+                </a>
+                <a href="contact.html" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-3 rounded-lg font-semibold transition duration-300">
+                    Request Custom Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-gavel text-accent text-2xl"></i>
+                        <span class="text-xl font-bold">JD Legal Transcripts</span>
+                    </div>
+                    <p class="text-gray-300">Professional transcription services with precision, speed, and confidentiality.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-300 hover:text-white transition duration-300">Legal Transcription</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-white transition duration-300">Medical Transcription</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-white transition duration-300">Interview Transcription</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-white transition duration-300">General Transcription</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <div class="space-y-2">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-envelope text-accent"></i>
+                            <span class="text-gray-300">info@jdlegaltranscripts.com</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-phone text-accent"></i>
+                            <span class="text-gray-300">(555) 123-4567</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-300 hover:text-accent transition duration-300">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="mailto:info@jdlegaltranscripts.com" class="text-gray-300 hover:text-accent transition duration-300">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-300">&copy; 2024 JD Legal Transcripts. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="terms.html" class="text-gray-300 hover:text-white transition duration-300">Terms of Service</a>
+                    <a href="privacy.html" class="text-gray-300 hover:text-white transition duration-300">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
